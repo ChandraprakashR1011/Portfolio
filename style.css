@@ -1,0 +1,809 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4070f4;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4070f4;
+}
+
+/* navbar styling */
+nav {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Minimal shadow */
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav.sticky {
+  background: #4070f4;
+  padding: 10px 0;
+} nav.sticky .menu-btn :hover{
+  color: #F0F8FF;
+}
+
+nav .navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+nav .navbar .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #4070f4;
+  text-decoration: none;
+}
+
+nav.sticky .navbar .logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+  top: 10px;
+}
+
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color:#4070f4;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+  text-decoration: none;
+
+}
+
+.navbar .menu a:hover {
+  color: #4070f4;
+  border-bottom: #4070f4 solid 1px;
+  transition: 0.1s;
+}
+
+nav.sticky .menu a {
+  color: #FFF;
+}
+
+nav.sticky .menu a:hover {
+  color: #f9fafb;
+  border-bottom: white solid 2px;
+  transition: 0.1s;
+  
+}
+
+.navbar .media-icons a {
+  color: #4070f4;
+  font-size: 18px;
+  margin: 0 6px;
+}
+
+nav.sticky .media-icons a {
+  color: #FFF;
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+nav .menu-btn {
+  color: #dfe2eb;
+}
+
+nav.sticky .menu-btn {
+  color: #FFF;
+}
+
+.navbar .menu .menu-btn {
+  color: #fff;
+}
+
+/* home section styling */
+.home {
+  height: 100vh;
+  width: 100%;
+  padding-left:70px;
+  background: url("images/Web.img.png") no-repeat;
+  background-size: contain;
+  background-position-x:900px;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #ffffff;
+
+}
+
+.home .home-content {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .text-one {
+  font-size: 25px;
+  color: #4070f4;
+}
+
+.home .text-two {
+  color: #4070f4;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .text-three {
+  font-size: 40px;
+  margin: 5px 0;
+  color: #4070f4;
+}
+
+.home .text-four {
+  font-size: 23px;
+  margin: 5px 0;
+  color: #4070f4;
+}
+
+.home .button {
+  margin: 14px 0;
+}
+
+
+
+.home .home-content .button a {
+  /* normal style */
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.home .home-content .button a:hover {
+  background-color: #4070f4;
+  border-color: #4070f4;
+}
+.home .home-content .button a:hover{
+color:#191919;
+}
+/* About Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+section {
+  padding-top: 40px;
+}
+
+section .content {
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+#about{
+    background: #F0F8FF;
+}
+
+.about .about-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section .title span {
+  color: #0E2431;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #4070f4;
+  left: 0;
+  bottom: 0;
+}
+
+section .title span::after {
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about .about-details .left {
+  width: 50%;
+}
+
+.about .left img {
+  height: 350px;
+  width: 350px;
+  margin-left: 50px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-details .right {
+  width: 55%;
+   margin-right: 50px;
+}
+
+section .topic {
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-details .right p {
+  text-align: justify;
+  color: #0E2431;
+  font-size:16px;
+
+}
+
+section .button {
+  margin: 1px 0;
+  padding-top: 20px;
+}
+
+section .button a{
+  outline: none;
+  padding: 7px 16px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #f6f4f4;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+section .button a:hover {
+  background-color: #fff;
+  color: #4070f4;
+  border-color:#4070f4;
+}
+/* --- Education Section Styling (Clean Card Format) --- */
+
+.education-section-clean {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff; /* Clean white background */
+}
+
+.education-section-clean h2 {
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    color: #474646;
+}
+
+.education-cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 40px; /* Space between cards */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.edu-card {
+    /* Flex properties for responsiveness */
+    flex: 1 1 400px; /* Base width is 400px, but it will grow/shrink */
+    max-width: 580px; /* Maximum size for a single card */
+    
+    /* Card appearance */
+    text-align: left;
+    padding: 30px;
+    background-color: #f8f8f8; /* Very light background for the card */
+    border-radius: 10px;
+    border-left: 5px solid #4070f4; /* Clean accent border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Minimal shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Hidden initially for animation */
+}
+
+.edu-card:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.edu-year {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #555; /* Muted year text */
+    margin-bottom: 5px;
+}
+
+.edu-title {
+    font-size: 1.4em;
+  color: #4070f4;    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.edu-institution {
+    font-weight: 600;
+    color: #202020;
+    margin-bottom: 15px;
+}
+
+.edu-details {
+    color: #595959;
+    line-height: 1.6;
+}
+.edu-details span{
+  color:#191919;
+}
+
+/* --- Animation Keyframes --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to each item with a delay */
+.edu-card.animate-fade {
+    animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.education-cards-container .edu-card:nth-child(1) { animation-delay: 0.1s; }
+.education-cards-container .edu-card:nth-child(2) { animation-delay: 0.3s; }
+.education-cards-container .edu-card:nth-child(3) { animation-delay: 0.5s; }
+.education-cards-container .edu-card:nth-child(4) { animation-delay: 0.7s; }
+
+/* --- Media Query for Responsiveness --- */
+@media (max-width: 500px) 
+{
+.home{
+  background-position-x:500px;
+  background-position-y: -15px;
+      overflow-x: hidden;
+}
+.home .text-two{
+  font-size: 65px;
+}
+  .text {
+    padding-top: 40px;
+  }
+.about .left img{
+    margin-left: 0px;
+    
+   }
+  .home{
+    background-position-x:130px;
+    padding-left: 0px;
+    overflow-x: hidden;
+  }
+    .edu-card {
+        flex: 1 1 100%; /* Makes cards stack full-width on very small screens */
+        max-width: 100%;
+    }
+}
+/* --- Skills Section Styling --- */
+
+.skills-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #F0F8FF;
+
+}
+
+.skills-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.skills-grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    
+    /* * Key to Responsiveness:
+     * Creates columns that automatically fit the space.
+     * Each column will be at least 150px wide, and the browser
+     * will fit as many as possible per row.
+     */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px; /* Space between the skill cards */
+    padding: 0 10px;
+}
+
+.skill-card {
+    /* Card appearance */
+    background-color: #ffffff;
+    color: #4070f4; /* Dark text color */
+    padding: 30px 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.3em;
+    text-align: center;
+    
+    /* Optional: Add a subtle border and shadow for depth */
+    border: 1px solid #e0e6e8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    
+    /* Hover effect to make it interactive */
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.skill-card:hover {
+    /* Primary color on hover */
+  background: #4070f4;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px); /* Lifts the card slightly */
+}
+
+
+
+
+/* My Services CSS */
+.services .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services .boxes .box {
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover {
+  background: #4070f4;
+  color: #fff;
+}
+.box{
+  text-align: center;
+}
+
+.services .boxes .box .icon {
+  height: 50px;
+  width: 50px;
+  background: #4070f4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+
+.boxes .box:hover .icon {
+  background-color: #fff;
+  color: #4070f4;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover .topic,
+.services .boxes .box:hover p {
+  color: #fff;
+}
+
+/* Contact Me CSS */
+.contact {
+  background: #F0F8FF;
+}
+
+.contact .content {
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.contact .text {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.icon{
+  justify-content: center;
+}
+.icon div a img{
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+
+}
+.icon div  img:hover{
+  box-shadow: -1px 0 10px #5b89ff7c;
+}
+.menu-btn :hover{
+  color: #4070f4;
+}
+
+/* Scroll TO Top Button CSS */
+.scroll-button a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #4070f4;
+  padding: 7px 12px;
+  ;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about .about-details {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about .about-details .left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-details .right {
+    width: 90%;
+    margin: 40px 0;
+  }
+
+  .services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .about .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  nav .navbar {
+    width: 90%;
+  }
+
+  nav .navbar .menu {
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    background: #4070f4;
+    height: 100vh;
+    max-width: 350px;
+    width: 100%;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+
+  .navbar.active .menu {
+    left: -25px;
+  }
+
+  nav .navbar .menu a {
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 15px 0;
+  }
+
+  nav.sticky .menu a:hover {
+    color: #ffffff;
+  }
+
+  nav .navbar .media-icons {
+    display: none;
+  }
+
+  nav .menu-btn,
+  .navbar .menu .cancel-btn {
+    display: block;
+  }
+
+  .home .text-two {
+    font-size: 65px;
+  }
+
+  .home .text-three {
+    font-size: 35px;
+  }
+
+  .skills .skills-details {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skills-details .text {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .skills-details .boxes {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .services .boxes .box {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .contact .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .text-two {
+    font-size: 55px;
+  }
+
+  .home .text-three {
+    font-size: 33px;
+  }
+
+  .skills-details .boxes .per {
+    font-size: 50px;
+    color: #4070f4;
+  }
+}
+
+
+ #text-pop-up-top{
+	-webkit-animation: text-shadow-drop-center 2.0s both;
+	        animation: text-shadow-drop-center 2.0s both;
+}
+
+@-webkit-keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+} 
+
+.swing-in-top-fwd {
+	-webkit-animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-top-fwd 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2025-10-1 12:22:24
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation swing-in-top-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+} 
+
