@@ -420,11 +420,13 @@ section .button a:hover {
 /* --- Media Query for Responsiveness --- */
 @media (max-width: 500px) 
 {
-.home{
-  background-position-x:500px;
-  background-position-y: -15px;
-      overflow-x: hidden;
-}
+  .home {
+    overflow-x: hidden;
+    background-size: 550px;
+    background-position: -40% center;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+  }
 .home .text-two{
   font-size: 65px;
 }
@@ -435,11 +437,7 @@ section .button a:hover {
     margin-left: 0px;
     
    }
-  .home{
-    background-position-x:130px;
-    padding-left: 0px;
-    overflow-x: hidden;
-  }
+  
     .edu-card {
         flex: 1 1 100%; /* Makes cards stack full-width on very small screens */
         max-width: 100%;
